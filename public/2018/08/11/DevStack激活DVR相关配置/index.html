@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+
+    
+
     
     <title>DevStack激活DVR相关配置 | 演好自己的戏，走好自己的路</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="OpenStack" />
+    <meta name="keywords" content="OpenStack" />
     
     <meta name="description" content="这些日子脑子里经常会想到《可可西里》电影里的一个画面，从刚陷入到流沙时的垂死挣扎越陷越深到后来彻底绝望放弃，电影表达了个人在恶劣的自然环境下的无能无力，换个角度想想，我们绝大多数人何尝不是已经陷入了深不见底的绝望之中，只不过这里不是沙漠戈壁而是同样现实的社会，我们挣扎着，不想认命，不想就此结束，但是结果常常是在岁月的流逝中，一步步走向属于我们这代人的结局。 DVR(Distributed virt">
 <meta name="keywords" content="OpenStack">
@@ -18,7 +21,7 @@
 <meta property="og:description" content="这些日子脑子里经常会想到《可可西里》电影里的一个画面，从刚陷入到流沙时的垂死挣扎越陷越深到后来彻底绝望放弃，电影表达了个人在恶劣的自然环境下的无能无力，换个角度想想，我们绝大多数人何尝不是已经陷入了深不见底的绝望之中，只不过这里不是沙漠戈壁而是同样现实的社会，我们挣扎着，不想认命，不想就此结束，但是结果常常是在岁月的流逝中，一步步走向属于我们这代人的结局。 DVR(Distributed virt">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://jungler.com/css/images/芦荟.png">
-<meta property="og:updated_time" content="2018-10-07T03:34:27.539Z">
+<meta property="og:updated_time" content="2020-02-08T11:07:23.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DevStack激活DVR相关配置">
 <meta name="twitter:description" content="这些日子脑子里经常会想到《可可西里》电影里的一个画面，从刚陷入到流沙时的垂死挣扎越陷越深到后来彻底绝望放弃，电影表达了个人在恶劣的自然环境下的无能无力，换个角度想想，我们绝大多数人何尝不是已经陷入了深不见底的绝望之中，只不过这里不是沙漠戈壁而是同样现实的社会，我们挣扎着，不想认命，不想就此结束，但是结果常常是在岁月的流逝中，一步步走向属于我们这代人的结局。 DVR(Distributed virt">
@@ -26,11 +29,11 @@
     
 
     
-        <link rel="alternate" href="/atom.xml" title="演好自己的戏，走好自己的路" type="application/atom+xml" />
+        <link rel="alternate" href="/" title="演好自己的戏，走好自己的路" type="application/atom+xml" />
     
 
     
-        <link rel="icon" href="/css/images/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
     
 
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
@@ -39,7 +42,7 @@
 
     <link rel="stylesheet" href="/css/style.css">
 
-    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="/libs/jquery/3.4.1/jquery.min.js"></script>
     
     
         <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
@@ -60,9 +63,9 @@
         <div class="container">
             <div class="container-inner">
                 <div id="header-title">
-                    <!--h1 class="logo-wrap">
+                    <h1 class="logo-wrap">
                         <a href="/" class="logo"></a>
-                    </h1-->
+                    </h1>
                     
                         <h2 class="subtitle-wrap">
                             <p class="subtitle">花生人的苟且人生</p>
@@ -82,10 +85,6 @@
                                     
                                 <li class="main-nav-list-item" >
                                     <a class="main-nav-list-link" href="/about/index.html">关于</a>
-                                </li>
-                            
-                                <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/board">更新日志</a>
                                 </li>
                             
                         </ul>
@@ -134,7 +133,6 @@
         </div>
     </div>
 </header>
-
         <div class="container">
             <div class="main-body container-inner">
                 <div class="main-body-inner">
@@ -145,6 +143,7 @@
     未分类
     </h1>
 </div>
+
                         <div class="main-body-content">
                             <article id="post-DevStack激活DVR相关配置" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
@@ -163,16 +162,24 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/08/11/DevStack激活DVR相关配置/" class="article-date">
-            <time datetime="2018-08-11T08:57:25.000Z" itemprop="datePublished">2018-08-11</time>
-        </a>
+      <i class="fa fa-calendar"></i>
+      <a href="/2018/08/11/DevStack激活DVR相关配置/" class="article-date">
+         <time datetime="2018-08-11T08:57:25.000Z" itemprop="datePublished">2018-08-11</time>
+      </a>
     </div>
+
+
+                
 
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/OpenStack/">OpenStack</a>
     </div>
+
+                
+
+                
 
             </div>
         
@@ -198,7 +205,7 @@
 
 
 
-    <a data-url="http://jungler.com/2018/08/11/DevStack激活DVR相关配置/" data-id="cjqm2yngl00006bb0ilwckuby" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jungler.com/2018/08/11/DevStack激活DVR相关配置/" data-id="ck6djykdi0000vqzbdxfzpkqc" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -260,25 +267,41 @@
 
         </footer>
     </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Dave Chen"
+        },
+        "headline": "DevStack激活DVR相关配置",
+        "image": "http://jungler.com/css/images/芦荟.png",
+        "keywords": "OpenStack",
+        "genre": "",
+        "datePublished": "2018-08-11",
+        "dateCreated": "2018-08-11",
+        "dateModified": "2020-02-08",
+        "url": "http://jungler.com/2018/08/11/DevStack激活DVR相关配置/",
+        "description": "这些日子脑子里经常会想到《可可西里》电影里的一个画面，从刚陷入到流沙时的垂死挣扎越陷越深到后来彻底绝望放弃，电影表达了个人在恶劣的自然环境下的无能无力，换个角度想想，我们绝大多数人何尝不是已经陷入了深不见底的绝望之中，只不过这里不是沙漠戈壁而是同样现实的社会，我们挣扎着，不想认命，不想就此结束，但是结果常常是在岁月的流逝中，一步步走向属于我们这代人的结局。
+DVR(Distributed virt",
+        "wordCount": 263
+    }
+</script>
+
 </article>
-<!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zNTg5OS8xMjQzNQ==">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
 
-       if (typeof LivereTower === 'function') { return; }
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
 
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
-</div>
-<!-- City版安装代码已完成 -->
+    
+    </section>
+
 
 
                         </div>
@@ -291,7 +314,31 @@
             
                 
                 <li>
-                    <a class="social-tooltip" title="github" href="https://github.com/chendave" target="_blank">
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="stack-overflow" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/chendave" target="_blank" rel="noopener">
                         <i class="icon fa fa-github"></i>
                     </a>
                 </li>
@@ -299,7 +346,7 @@
             
                 
                 <li>
-                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
                         <i class="icon fa fa-weibo"></i>
                     </a>
                 </li>
@@ -307,7 +354,7 @@
             
                 
                 <li>
-                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank">
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
                         <i class="icon fa fa-rss"></i>
                     </a>
                 </li>
@@ -508,6 +555,7 @@
         
     </div>
 </aside>
+
                 </div>
             </div>
         </div>
@@ -516,13 +564,19 @@
         <div class="container-inner">
             <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
             <div class="credit">
-                <!--h1 class="logo-wrap">
+                <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
-                </h1-->
-                <p>&copy; 2019 Dave Chen</p>
-                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
-                <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-                <span id="busuanzi_container_site_pv">本站访问<span id="busuanzi_value_site_pv"></span>次</span>
+                </h1>
+                <p>&copy; 2020 Dave Chen</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
             </div>
         </div>
     </div>
@@ -548,6 +602,7 @@
 
 
 
+
     
         <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
         <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
@@ -562,6 +617,8 @@
     
         <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
     
+    
+
     
 
 

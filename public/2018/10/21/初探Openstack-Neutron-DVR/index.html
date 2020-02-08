@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+
+    
+
     
     <title>（转）初探Openstack Neutron DVR | 演好自己的戏，走好自己的路</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="OpenStack" />
+    <meta name="keywords" content="OpenStack" />
     
     <meta name="description" content="这篇文章总结的很好了，偷懒直接转过来，以便日后不时查看。 首先看一下，没有使用DVR的问题在哪里：  从图中可以明显看到东西向和南北向的流量会集中到网络节点，这会使网络节点成为瓶颈。 那如果启用的DVR，情况会变成如下：  对于东西向的流量， 流量会直接在计算节点之间传递。对于南北向的流量，如果有floating ip，流量就直接走计算节点。如果没有floating ip，则会走网络节点。 我的实">
 <meta name="keywords" content="OpenStack">
@@ -18,7 +21,7 @@
 <meta property="og:description" content="这篇文章总结的很好了，偷懒直接转过来，以便日后不时查看。 首先看一下，没有使用DVR的问题在哪里：  从图中可以明显看到东西向和南北向的流量会集中到网络节点，这会使网络节点成为瓶颈。 那如果启用的DVR，情况会变成如下：  对于东西向的流量， 流量会直接在计算节点之间传递。对于南北向的流量，如果有floating ip，流量就直接走计算节点。如果没有floating ip，则会走网络节点。 我的实">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://jungler.com/css/images/forward.jpg">
-<meta property="og:updated_time" content="2018-10-28T03:14:33.807Z">
+<meta property="og:updated_time" content="2020-02-08T11:07:23.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="（转）初探Openstack Neutron DVR">
 <meta name="twitter:description" content="这篇文章总结的很好了，偷懒直接转过来，以便日后不时查看。 首先看一下，没有使用DVR的问题在哪里：  从图中可以明显看到东西向和南北向的流量会集中到网络节点，这会使网络节点成为瓶颈。 那如果启用的DVR，情况会变成如下：  对于东西向的流量， 流量会直接在计算节点之间传递。对于南北向的流量，如果有floating ip，流量就直接走计算节点。如果没有floating ip，则会走网络节点。 我的实">
@@ -26,11 +29,11 @@
     
 
     
-        <link rel="alternate" href="/atom.xml" title="演好自己的戏，走好自己的路" type="application/atom+xml" />
+        <link rel="alternate" href="/" title="演好自己的戏，走好自己的路" type="application/atom+xml" />
     
 
     
-        <link rel="icon" href="/css/images/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
     
 
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
@@ -39,7 +42,7 @@
 
     <link rel="stylesheet" href="/css/style.css">
 
-    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="/libs/jquery/3.4.1/jquery.min.js"></script>
     
     
         <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
@@ -60,9 +63,9 @@
         <div class="container">
             <div class="container-inner">
                 <div id="header-title">
-                    <!--h1 class="logo-wrap">
+                    <h1 class="logo-wrap">
                         <a href="/" class="logo"></a>
-                    </h1-->
+                    </h1>
                     
                         <h2 class="subtitle-wrap">
                             <p class="subtitle">花生人的苟且人生</p>
@@ -82,10 +85,6 @@
                                     
                                 <li class="main-nav-list-item" >
                                     <a class="main-nav-list-link" href="/about/index.html">关于</a>
-                                </li>
-                            
-                                <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/board">更新日志</a>
                                 </li>
                             
                         </ul>
@@ -134,7 +133,6 @@
         </div>
     </div>
 </header>
-
         <div class="container">
             <div class="main-body container-inner">
                 <div class="main-body-inner">
@@ -145,6 +143,7 @@
     未分类
     </h1>
 </div>
+
                         <div class="main-body-content">
                             <article id="post-初探Openstack-Neutron-DVR" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
@@ -163,16 +162,24 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/10/21/初探Openstack-Neutron-DVR/" class="article-date">
-            <time datetime="2018-10-21T07:26:18.000Z" itemprop="datePublished">2018-10-21</time>
-        </a>
+      <i class="fa fa-calendar"></i>
+      <a href="/2018/10/21/初探Openstack-Neutron-DVR/" class="article-date">
+         <time datetime="2018-10-21T07:26:18.000Z" itemprop="datePublished">2018-10-21</time>
+      </a>
     </div>
+
+
+                
 
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/OpenStack/">OpenStack</a>
     </div>
+
+                
+
+                
 
             </div>
         
@@ -288,7 +295,7 @@
 
 
 
-    <a data-url="http://jungler.com/2018/10/21/初探Openstack-Neutron-DVR/" data-id="cjqm2ynhg000t6bb0sxd1plno" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://jungler.com/2018/10/21/初探Openstack-Neutron-DVR/" data-id="ck6djykek000xvqzbx2zpr09h" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -350,25 +357,47 @@
 
         </footer>
     </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Dave Chen"
+        },
+        "headline": "（转）初探Openstack Neutron DVR",
+        "image": "http://jungler.com/css/images/forward.jpg",
+        "keywords": "OpenStack",
+        "genre": "",
+        "datePublished": "2018-10-21",
+        "dateCreated": "2018-10-21",
+        "dateModified": "2020-02-08",
+        "url": "http://jungler.com/2018/10/21/初探Openstack-Neutron-DVR/",
+        "description": "这篇文章总结的很好了，偷懒直接转过来，以便日后不时查看。
+首先看一下，没有使用DVR的问题在哪里：
+
+从图中可以明显看到东西向和南北向的流量会集中到网络节点，这会使网络节点成为瓶颈。
+那如果启用的DVR，情况会变成如下：
+
+对于东西向的流量， 流量会直接在计算节点之间传递。对于南北向的流量，如果有floating ip，流量就直接走计算节点。如果没有floating ip，则会走网络节点。
+我的实",
+        "wordCount": 3495
+    }
+</script>
+
 </article>
-<!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zNTg5OS8xMjQzNQ==">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
 
-       if (typeof LivereTower === 'function') { return; }
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
 
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
-</div>
-<!-- City版安装代码已完成 -->
+    
+    </section>
+
 
 
                         </div>
@@ -381,7 +410,31 @@
             
                 
                 <li>
-                    <a class="social-tooltip" title="github" href="https://github.com/chendave" target="_blank">
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="stack-overflow" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/chendave" target="_blank" rel="noopener">
                         <i class="icon fa fa-github"></i>
                     </a>
                 </li>
@@ -389,7 +442,7 @@
             
                 
                 <li>
-                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
                         <i class="icon fa fa-weibo"></i>
                     </a>
                 </li>
@@ -397,7 +450,7 @@
             
                 
                 <li>
-                    <a class="social-tooltip" title="rss" href="/atom.xml" target="_blank">
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
                         <i class="icon fa fa-rss"></i>
                     </a>
                 </li>
@@ -598,6 +651,7 @@
         
     </div>
 </aside>
+
                 </div>
             </div>
         </div>
@@ -606,13 +660,19 @@
         <div class="container-inner">
             <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
             <div class="credit">
-                <!--h1 class="logo-wrap">
+                <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
-                </h1-->
-                <p>&copy; 2019 Dave Chen</p>
-                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
-                <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-                <span id="busuanzi_container_site_pv">本站访问<span id="busuanzi_value_site_pv"></span>次</span>
+                </h1>
+                <p>&copy; 2020 Dave Chen</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
             </div>
         </div>
     </div>
@@ -638,6 +698,7 @@
 
 
 
+
     
         <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
         <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
@@ -652,6 +713,8 @@
     
         <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
     
+    
+
     
 
 
